@@ -1,0 +1,86 @@
+[{
+        "name": "Alajos István",
+        "age": 30,
+        "profession": "kovács",
+        "jobSeeker": false
+    },
+    {
+        "name": "Kovács Magdolna",
+        "age": 25,
+        "profession": "fodrász",
+        "jobSeeker": true
+    },
+    {
+        "name": "Szabó János",
+        "age": 32,
+        "profession": "asztalos",
+        "jobSeeker": true
+    },
+    {
+        "name": "Varga Nándor",
+        "age": 33,
+        "profession": "szabó",
+        "jobSeeker": false
+    },
+    {
+        "name": "Juhász Ilona",
+        "age": 40,
+        "profession": "szakács",
+        "jobSeeker": true
+    },
+    {
+        "name": "Marosi Anna",
+        "age": 28,
+        "profession": "ápoló",
+        "jobSeeker": false
+    },
+    {
+        "name": "Török Klára",
+        "age": 29,
+        "profession": "könyvelő",
+        "jobSeeker": false
+    },
+    {
+        "name": "Sipos Márton",
+        "age": 42,
+        "profession": "kántor",
+        "jobSeeker": true
+    },
+    {
+        "name": "Hegedűs Eszter",
+        "age": 40,
+        "profession": "programozó",
+        "jobSeeker": true
+    },
+    {
+        "name": "Balács Andor",
+        "age": 36,
+        "profession": "ács",
+        "jobSeeker": false
+    },
+    {
+        "name": "Rácz Anna",
+        "age": 47,
+        "profession": "orvos",
+        "jobSeeker": false
+    },
+    {
+        "name": "Hámori Lenke",
+        "age": 30,
+        "profession": "szinész",
+        "jobSeeker": true
+    },
+    {
+        "name": "Szalai Gábor",
+        "age": 42,
+        "profession": "lakatos",
+        "jobSeeker": true
+    },
+    {
+        "name": "Tóth György",
+        "age": 36,
+        "jobSeeker": "true",
+        "gender": "male",
+        "profession": "Folyamatirányító"
+    }
+]

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vizsga 2022. 06. 11.</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>
+    .info {
+      background-color: rgb(23, 162, 184);
+      box-sizing: border-box;
+      color: rgb(255, 255, 255);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 8px;
+      padding-bottom: 16px;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 16px;
+      text-align: left
+    }
+    
+    .mt-10 {
+      margin-top: 10px
+    }
+    
+    ol {
+      list-style-type: lower-alpha;
+    }
+  </style>
+</head>
+
+<body cz-shortcut-listen="true">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="page-header">
+              <h3>Vizsga 2022. 06. 11.</h3>
+            </div>
+          </div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="info">
+                  <b>Figyelem!</b>
+                  <br> A public/dolgozat.html igény szerint módosítható. <br> Ha elkészültél, a fájlokat rakd egy mappába, névnek add meg a vezetékneved, majd ZIP formátumba csomagolva küldd el. Google Drive-on keresztül<br>
+                  <b>Sok sikert!</b>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <h3>1.</h3>
+                <p>
+                  A main.js állományban <code>http</code> package-et használva készítsetek egy szervert, mely a <code>/vizsga</code> kérésre, betölti a
+                  <code>/public/dolgozat.html</code> oldalt a hozzá tartozó <code>script.js</code> állománnyal együtt
+                </p>
+              </li>
+              <li class="list-group-item">
+                <h3>2.</h3>
+                <p>
+                  Készítsetek egy nodejs applikációt, mely a <code>users.json</code> adataibój:
+                  <p><b>GET </b> <code>/allaskeresok</code> kérésre visszaadja azon felhasználókat, amelyek állást keresnek. </p>
+                  <button id="jobseeker">Álláskeresők</button>
+                  <p><b>GET </b> <code>/foglalkoztatottak</code> kérésre visszaadja azon felhasználókat, amelyek már nem álláskeresők. </p>
+                  <button id="job">Foglalkoztatottak</button>
+                </p>
+              </li>
+              <li class="list-group-item">
+                <h3>3.</h3>
+                <p>
+                  Az alábbi ürlap <code>Mentés</code> gombjára kattintva, a kitöltött űrlap adatait, küldjétek el <code>POST</code> kérésben a <code>/newuser</code> címre. A szerveren pedig a postban küldött adatokat adjátok hozzá a <code>users.json</code>                  adataihoz.
+
+                </p>
+                <div class="row" style="padding-bottom: 20px;">
+                  <label for="name" class="col-md-2">Neve:</label> <input class="col-md-2" type="text" name="name" id="name">
+                  <span class="col-md-2"></span>
+                  <label class="col-md-2" for="gender">Neme:</label> <select class="col-md-2" name="gender" id="gender">
+                                        <option value="female">Nő</option>
+                                        <option value="male">Férfi</option>
+                                    </select>
+                </div>
+                <div class="row" style="padding-bottom: 20px;">
+                  <label for="age" class="col-md-2">Kora:</label><input class="col-md-2" type="text" name="age" id="age">
+                  <span class="col-md-2"></span>
+                  <label for="profession" class="col-md-2">Foglalkozása:</label>
+                  <input class="col-md-2" type="text" name="profession" id="profession">
+                </div>
+                <div class="row" style="padding-bottom: 20px;">
+                  <label class="col-md-2" for="jobseeker">Foglalkoztatottsága:</label>
+                  <select class="col-md-2" name="jobseeker" id="jobseeker">
+                                        <option value="true">Álláskerső</option>
+                                        <option value="false">Foglalkoztatott</option>
+                                    </select>
+                  <span class="col-md-2"></span>
+                  <div class="col-md-6"><button id="save" class="btn btn-primary">Mentés</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
